@@ -1,0 +1,2 @@
+pyserial==3.4
+tornado==6.0.4

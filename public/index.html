@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Simple Serial Web Terminal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar navbar-dark bg-dark shadow-sm pt-0 pb-0">
+      <div class="container d-flex justify-content-between">
+        <a href="/" class="navbar-brand d-flex align-items-center pt-0 pb-0">
+          <img src="/static/images/PyArdu.png" style="height:5rem;">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main role="main">
+    <section class="jumbotron pt-2 pb-2">
+      <div class="container">
+        <h1 class="mb-0">
+          <img src="/static/images/logo.png" style="vertical-align: text-bottom; height:3rem;"> 
+          Simple Serial Web Terminal
+        </h1>
+      </div>
+    </section> 
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="form-group row">
+              <label for="port" class="col-sm-12 col-md-4">Port Name</label>
+              <div class="col-sm-12 col-md-8">
+                <input type="text" class="form-control" name="port" id="port">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="baudrate" class="col-sm-12 col-md-4">Baud Rate</label>
+              <div class="col-sm-12 col-md-8">
+                <select name="baudrate" id="baudrate" class="form-control">
+                  <option value="1200">1200</option>
+                  <option value="2400">2400</option>
+                  <option value="4800">4800</option>
+                  <option value="9600" selected>9600</option>
+                  <option value="19200">19200</option>
+                  <option value="38400">38400</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12 col-md-12">
+                <button type="button" id="cmd-port" class="btn btn-success form-control">Open Port</button>
+              </div>
+            </div> <!-- /row -->
+            <div class="row">
+              <div class="form-group col-sm-12 col-md-12">
+                <button type="button" id="clear" class="btn btn-dark form-control">Clear received data</button>
+              </div>
+            </div>
+          </div> <!-- /col -->
+          <div class="col-sm-12 col-md-8">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <div class="input-group mb-3">
+                  <input type="text" name="message" id="message" class="form-control" aria-label="Send" aria-describedby="send-message">
+                  <div class="input-group-append">
+                    <button type="button" id="send-message" class="btn btn-outline-secondary">Send</button>
+                  </div>
+                </div>
+              </div> <!-- /col -->
+            </div> <!-- /row -->
+            <div class="row">
+              <div class="form-group col-sm-12 col-md-12">
+                <textarea class="form-control" id="received-data" rows="12"></textarea>
+              </div>
+            </div>
+          </div> <!-- /col -->
+        </div> <!-- /row -->
+      </form>
+    </div> <!-- /container -->
+  </main>
+  <footer class="text-muted text-right mt-2">
+    <hr>
+    <div class="container">
+      <p class="small">&copy; 2020 - Andre Devecchi</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
