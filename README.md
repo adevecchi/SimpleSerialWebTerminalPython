@@ -6,6 +6,7 @@ Terminal Serial Web Simples
 * tornado==6.0.4
 
 ### Sistemas Operacinais testados:
+* Linux
 * Windows
 
 ### Descrição:
@@ -15,4 +16,6 @@ Exemplo de teste utilizando um Arduino para realizar comunicação transmitindo 
 
 Windows
 -------
+![Tela linux](https://github.com/adevecchi/SimpleSerialWebTerminalPython/blob/master/public/images/terminal-linux.png)
+
 ![Tela Windows](https://github.com/adevecchi/SimpleSerialWebTerminalPython/blob/master/public/images/terminal-win.png)

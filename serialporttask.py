@@ -58,5 +58,7 @@ class SerialPortThread(threading.Thread):
                         data = self.readSerial()
                         # send it back to tornado
                         self.output_queue.put(data.decode("utf-8").replace("\n", ""))
-                except serial.SerialException as err:
+                except serial.SerialException:
+                    pass
+                except Exception:
                     pass
