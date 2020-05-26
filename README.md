@@ -16,7 +16,7 @@ Exemplo de teste utilizando um Arduino para realizar comunicação transmitindo 
 
 Demo:
 -----
-[![Video demo](https://i.ytimg.com/an_webp/frqhUkmsBu8/mqdefault_6s.webp?du=3000&sqp=CL67svYF&rs=AOn4CLB8uaeYmlCHRAq_UxVj5y1tv_f9rA)](https://www.youtube.com/watch?v=frqhUkmsBu8)
+[![Video demo](https://github.com/adevecchi/SimpleSerialWebTerminalPython/blob/master/public/images/demo.png)](https://www.youtube.com/watch?v=frqhUkmsBu8)
 
 Linux
 -----
