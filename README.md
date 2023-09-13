@@ -3,7 +3,8 @@ Terminal Serial Web Simples
 
 ### Requisitos:
 * pyserial==3.4
-* tornado==6.0.4
+* tornado==6.3.3
+* python 3.8 e posterior
 
 ### Sistemas Operacinais testados:
 * Linux
